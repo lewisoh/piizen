@@ -1,6 +1,7 @@
 --find-links wheelhouse64
 spacy==2.0.0
 thinc==6.10.1
+murmurhash==2.3.5
 regex==2017.4.5
 Flask==1.0.2
 gunicorn==19.9.0
