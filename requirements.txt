@@ -1,5 +1,3 @@
---find-links wheelhouse64
-python.exe -m pip wheel -r requirements.txt -w wheelhouse
 certifi==2018.10.15
 chardet==3.0.4
 Click==7.0
