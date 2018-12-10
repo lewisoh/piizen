@@ -1,5 +1,4 @@
 --find-links wheelhouse64
-setuptools==40.6.2
 spacy==2.0.5
 thinc==6.10.1
 murmurhash==0.27 
