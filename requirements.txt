@@ -1,7 +1,7 @@
 --find-links wheelhouse64
 spacy==2.0.5
 thinc==6.10.1
-murmurhash==0.27 
+murmurhash==1.0.1 
 certifi==2018.10.15
 chardet==3.0.4
 Click==7.0
