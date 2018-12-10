@@ -1,5 +1,5 @@
 --find-links wheelhouse64
-spacy==2.0.18
+spacy==2.0.0
 thinc==6.12.1
 murmurhash==1.0.1 
 certifi==2018.11.29
