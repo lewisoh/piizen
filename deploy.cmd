@@ -124,8 +124,11 @@ env\scripts\python -m pip install pip --upgrade
 echo Pip install Setuptools
 env\scripts\pip install setuptools --upgrade
 IF !ERRORLEVEL! NEQ 0 goto error
+env\scripts\pip pip install spacy-2.0.0-cp36-cp36m-win_amd64.whl
+echo worked
 echo Pip install requirements.
 env\scripts\pip install -r requirements.txt
+
 IF !ERRORLEVEL! NEQ 0 goto error
 
 REM Add additional package installation here
