@@ -1,5 +1,4 @@
 --find-links wheelhouse64
-ctypes==1.0.2
 spacy==2.0.5
 thinc==6.5.2 
 certifi==2018.10.15
