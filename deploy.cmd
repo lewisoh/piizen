@@ -121,11 +121,11 @@ IF NOT EXIST "%DEPLOYMENT_TARGET%\env\azure.env.%PYTHON_RUNTIME%.txt" (
 :: 4. Install packages
 echo Upgrade pip package.
 env\scripts\python -m pip install pip --upgrade
+echo Pip install Setuptools
+env\scripts\pip install setuptools --upgrade
 IF !ERRORLEVEL! NEQ 0 goto error
 echo Pip install requirements.
 env\scripts\pip install -r requirements.txt
-echo Pip install Setuptools
-env\scripts\pip -m pip install setuptools --upgrade
 IF !ERRORLEVEL! NEQ 0 goto error
 
 REM Add additional package installation here
