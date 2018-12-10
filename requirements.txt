@@ -1,7 +1,6 @@
 --find-links wheelhouse64
 spacy==2.0.0
 thinc==6.12.1
-murmurhash==1.0.1 
 certifi==2018.11.29
 chardet==3.0.4
 Click==7.0
@@ -14,11 +13,23 @@ msgpack==0.6.0
 msgpack-numpy==0.4.4.2
 numpy==1.15.4
 plac==0.9.6
-regex==2017.4.5
+certifi==2018.10.15
+chardet==3.0.4
+Click==7.0
+cytoolz==0.9.0.1
+Flask==1.0.2
+gunicorn==19.9.0
+idna==2.7
+itsdangerous==1.1.0
+Jinja2==2.10
+MarkupSafe==1.1.0
+msgpack==0.5.6
+msgpack-numpy==0.4.3.2
+murmurhash==1.0.1
+numpy==1.15.4
+plac==0.9.6
+preshed==2.0.1
+pyreadline==2.1
+regex>=2017.06.2
 requests==2.20.0
 six==1.11.0
-ujson==1.35
-urllib3==1.24.1
-Werkzeug==0.14.1
-wrapt==1.10.11
-simplejson==3.16.0
