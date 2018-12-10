@@ -24,5 +24,5 @@ urllib3==1.24.1
 Werkzeug==0.14.1
 wrapt==1.10.11
 simplejson==3.16.0
-ctypes >=1.0.1
-readline >=1.7.1
+readline==1.7.1
+ctypes==1.0.1
