@@ -124,6 +124,8 @@ env\scripts\python -m pip install pip --upgrade
 IF !ERRORLEVEL! NEQ 0 goto error
 echo Pip install requirements.
 env\scripts\pip install -r requirements.txt
+echo Pip install Setuptools
+env\scripts\pip -m pip install setuptools --upgrade
 IF !ERRORLEVEL! NEQ 0 goto error
 
 REM Add additional package installation here
