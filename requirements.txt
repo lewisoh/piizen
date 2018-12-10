@@ -1,4 +1,5 @@
 --find-links wheelhouse64
+ctypes==1.0.2
 spacy==2.0.5
 thinc==6.5.2 
 certifi==2018.10.15
@@ -24,5 +25,3 @@ urllib3==1.24.1
 Werkzeug==0.14.1
 wrapt==1.10.11
 simplejson==3.16.0
-readline==1.7.1
-ctypes==1.0.1
