@@ -120,10 +120,9 @@ IF NOT EXIST "%DEPLOYMENT_TARGET%\env\azure.env.%PYTHON_RUNTIME%.txt" (
 
 :: 4. Install packages
 echo Upgrade pip package.
-env\scripts\pip install --upgrade pip
+env\scripts\python -m pip install pip --upgrade
 IF !ERRORLEVEL! NEQ 0 goto error
 echo Pip install requirements
-env\scripts\pip install murmurhash
 env\scripts\pip install -r requirements.txt
 
 IF !ERRORLEVEL! NEQ 0 goto error
