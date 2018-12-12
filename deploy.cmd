@@ -17,6 +17,7 @@ IF %ERRORLEVEL% NEQ 0 (
 
 :: Setup
 :: -----
+:: -----
 
 setlocal enabledelayedexpansion
 
@@ -121,6 +122,7 @@ IF NOT EXIST "%DEPLOYMENT_TARGET%\env\azure.env.%PYTHON_RUNTIME%.txt" (
 :: 4. Install packages
 echo Configure Wheel
 D:\home\python364x64\python.exe -m pip install wheel
+D:\home\python364x64\python.exe -m pip install D:\home\site\wwwroot\wheelhouse
 IF !ERRORLEVEL! NEQ 0 goto error
 echo Pip install requirements. 
 D:\home\python364x64\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
