@@ -1,3 +1,20 @@
+Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ @lewisoh Sign out
+0
+0 0 lewisoh/piizen
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Insights  Settings
+piizen/deploy.cmd
+746a8e6  6 minutes ago
+@lewisoh lewisoh '12/12'
+     
+134 lines (99 sloc)  3.25 KB
 @if "%SCM_TRACE_LEVEL%" NEQ "4" @echo off
 
 :: ----------------------
@@ -97,9 +114,9 @@ IF EXIST "%DEPLOYMENT_TARGET%\.skipPythonDeployment" goto postPython
 echo Detected requirements.txt. RUNNING CUSTOM DEPLOYMENT
 
 :: 2. Install packages
-echo Pip install requirements.
-D:\home\Python27\python.exe -m pip install --upgrade -r requirements.txt
-IF !ERRORLEVEL! NEQ 0 goto error
+echo Pip install requirements.  
+D:\home\python364x86\python.exe -m pip install --upgrade -r requirements.txt  
+IF !ERRORLEVEL! NEQ 0 goto error  
 
 
 popd
@@ -132,3 +149,16 @@ exit /b 1
 :end
 endlocal
 echo Finished successfully.
+© 2018 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+Press h to open a hovercard with more details.
