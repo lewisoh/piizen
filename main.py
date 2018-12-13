@@ -1,5 +1,5 @@
 from flask import Flask, redirect, url_for, request
-# import spacy
+import spacy
 import re
 import json
 
