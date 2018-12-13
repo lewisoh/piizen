@@ -122,7 +122,7 @@ IF NOT EXIST "%DEPLOYMENT_TARGET%\env\azure.env.%PYTHON_RUNTIME%.txt" (
 :: 4. Install packages
 echo Configure Wheel
 D:\home\python364x86\python.exe -m pip install wheel
-D:\home\python364x86\python.exe -m pip install D:\home\site\wwwroot\wheelhouse
+D:\home\python364x86\python.exe -m pip install D:\home\site\wwwroot\wheelhouse\spacy-2.0.18-cp36-cp36m-win32.whl
 IF !ERRORLEVEL! NEQ 0 goto error
 echo Pip install requirements. 
 D:\home\python364x86\python.exe -m pip install -r D:\home\site\wwwroot\requirements.txt
