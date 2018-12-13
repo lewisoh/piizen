@@ -1,4 +1,5 @@
 from flask import Flask, redirect, url_for, request
+import en_core_web_sm
 import spacy
 import re
 import json
@@ -12,6 +13,8 @@ app = Flask(__name__)
 @app.route("/", methods=['POST'])
 def parse_text():
 
+    print('hello')
+    
     input = request.get_json()
     print(input)
     sentence = json.dumps(input)
@@ -39,9 +42,10 @@ def parse_text():
     
 
 
-    #sentence = " ".join(sentence)
-
+    #sentence = "".join(sentence)
     return sentence
 
-if __name__ == '__main__':
-    application.run()
+
+if __name__ == "__main__":
+    app.debug = True
+    app.run()
