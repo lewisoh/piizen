@@ -20,29 +20,18 @@ def parse_text():
     sentence = json.dumps(input)
     
     
-    
 
     doc = nlp(sentence)    
     sentence = doc.text
 
+    spacyEnts = ['PERSON', 'ORG', 'CARDINAL','DATE', 'NUM']
+
     for ent in doc.ents:
-        if ent.label_ == 'PERSON':
-            sentence = re.sub(ent.text, '**PII-NAME**', sentence)
-        if ent.label_ == 'ORG':
-            sentence = re.sub(ent.text, '**PII-NAME**', sentence)
-        if ent.label_ == 'NUM':
-            sentence = re.sub(ent.text, '**PII-NUM**', sentence) 
-        if ent.label_ == 'DATE':
-            sentence = re.sub(ent.text, '**PII-NUM**', sentence)
-        if ent.label_ == 'CARDINAL':
-            sentence = re.sub(ent.text, '**PII-NUM**', sentence)
-        print("test")
-        print("sentence")
+            if ent.label_ in spacyEnts:
+                sentence = re.sub(ent.text, '**PII**', sentence)
+                sentence = re.sub(r'[^@\s]+@[^@\s]+\.[^@\s]+', '**PII**', sentence)
 
-    
-
-
-    #sentence = "".join(sentence)
+   
     return sentence
 
 
