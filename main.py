@@ -42,3 +42,6 @@ def parse_text():
     #sentence = " ".join(sentence)
 
     return sentence
+
+if __name__ == '__main__':
+    application.run()
